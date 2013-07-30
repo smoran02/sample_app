@@ -133,6 +133,20 @@ aside {
 	margin-right: 10px;
 }
 
+/* Forms */
+
+input, textarea, select, .uneditable-input {
+	border: 1px solid #bbb;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	@include box-sizing;
+}
+
+input {
+	height: auto !important;
+}
+
 /* Miscellaneous */
 
 .debug_dump {
