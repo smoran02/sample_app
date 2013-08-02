@@ -5,11 +5,11 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.paginate(page: params[:page])
+    @users = User.order('id ASC').paginate(page: params[:page])
   end
 
   def show
-	  @user = User.order('id ASC').paginate(page: params[:page])
+	  @user = User.find(params[:id])
   end
 
   def new
