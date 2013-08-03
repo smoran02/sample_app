@@ -150,6 +150,6 @@ describe "UserPages" do
       end
       before { patch user_path(user), params }
       specify { expect(user.reload).not_to be_admin }
-    end
+     end
   end
 end
